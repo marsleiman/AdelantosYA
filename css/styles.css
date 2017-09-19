@@ -98,8 +98,8 @@ h2{
 input[type=range] {
   height: 55px;
   -webkit-appearance: none;
-  margin: 10px 0;
-  width: 100%;
+  margin: 10px auto;
+  width: 80%;
 }
 input[type=range]:focus {
   outline: none;
@@ -110,20 +110,24 @@ input[type=range]::-webkit-slider-runnable-track {
   cursor: pointer;
   animate: 0.2s;
   box-shadow: 1px 1px 2px #828282;
-  background: #595EC2;
+  background: #595ec2; /* Old Browsers */
+  background: -webkit-linear-gradient(top,#595ec2,#1b1464); /*Safari 5.1-6*/
+  background: -o-linear-gradient(top,#595ec2,#1b1464); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(top,#595ec2,#1b1464); /*Fx 3.6-15*/
+  background: linear-gradient(to bottom, #595ec2, #1b1464); /*Standard*/
   border-radius: 50px;
   border: 3px solid #B3B3B3;
 }
 input[type=range]::-webkit-slider-thumb {
-  box-shadow: 2px 2px 5px #969696;
+
   border: 2px solid #D4D4D4;
-  height: 45px;
+  height: 29px;
   width: 50px;
-  border-radius: 45px;
+  border-radius: 60px;
   background: #575760;
   cursor: pointer;
   -webkit-appearance: none;
-  margin-top: -11.5px;
+  margin-top: -4px;
 }
 input[type=range]:focus::-webkit-slider-runnable-track {
   background: #595EC2;
