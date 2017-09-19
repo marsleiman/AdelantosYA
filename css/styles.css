@@ -1,0 +1,59 @@
+*{
+  margin: 0 auto;
+  padding: -1px;
+}
+header{
+  position: relative;
+  height: 100%;
+  min-height: 650px;
+  text-align: center;
+  background-image: url(../img/background.jpg);
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+  }
+nav{
+    background-color: rgba(252, 252, 252, 0);
+    height: 100px;
+    z-index: 20;
+    }
+h1{
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  color: #1B1464;
+  font-weight: bold;
+}
+h2{
+  font-family: 'Open Sans', sans-serif;
+}
+.logo{
+  background-image: url(../img/adelantos.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 262px;
+  height: 47px;
+}
+.menu ul li{
+  display: inline-block;
+  text-decoration: none;
+  margin: 5px;
+  font-size: 14px;
+  color: #1B1464;
+}
+nav{
+  padding-top: 20px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+main{
+}
+.account a{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #1B1464;
+  font-weight: 700;
+}
