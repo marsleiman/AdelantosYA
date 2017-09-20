@@ -70,15 +70,15 @@ header{
 }
 h1{
   font-family: 'Open Sans', sans-serif;
-  text-transform: uppercase;
   color: #1B1464;
-  font-weight: bold;
+  font-weight: 600;
+  padding: 15px 0;
 }
 h2{
   font-family: 'Open Sans', sans-serif;
   color: #1B1464;
 }
-.caja{
+.box{
   margin-top: 30px;
   text-align: center;
   background-color: #fff;
@@ -89,10 +89,9 @@ h2{
   -moz-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
 }
-.caja h3{
-  text-transform: uppercase;
+.box h3{
   color: #1B1464;
-  padding: 30px;
+  padding-top: 20px;
 }
 /* RANGER */
 input[type=range] {
@@ -187,4 +186,54 @@ input[type=range]:focus::-ms-fill-lower {
 }
 input[type=range]:focus::-ms-fill-upper {
   background: #595EC2;
+}
+.number{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+.number p{
+  font-family: 'Open sans' sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #666;
+  margin-top: -6px;
+}
+.ticket{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding: 30px 0;
+}
+#id{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-medium{
+  background: #595EC2;
+  background-image: -webkit-linear-gradient(top, #595EC2, #1B1464);
+  background-image: -moz-linear-gradient(top, #595EC2, #1B1464);
+  background-image: -ms-linear-gradient(top, #595EC2, #1B1464);
+  background-image: -o-linear-gradient(top, #595EC2, #1B1464);
+  background-image: linear-gradient(to bottom, #595EC2, #1B1464);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: 'Open sans' sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  margin: 20px auto;
+  padding: 5px 25px;
+  width: 80%;
+  height: 10%;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+section .title{
+  font-family: 'Open Sans', sans-serif;
+  color: #3C3C3B;
+  text-align: center;
 }
