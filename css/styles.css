@@ -2,6 +2,9 @@
   margin: 0 auto;
   padding: -1px;
 }
+body{
+  font-family: 'Open Sans', sans-serif;
+}
 nav{
   display: flex;
   align-items: baseline;
@@ -17,7 +20,6 @@ header{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  font-family: 'Open Sans', sans-serif;
   }
 .logo{
   margin-top: 20px;
@@ -35,7 +37,6 @@ header{
   color: #1B1464;
 }
 .solicitud a{
-  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   color: #1B1464;
   font-weight: 700;
@@ -69,14 +70,13 @@ header{
   text-decoration: none;
 }
 h1{
-  font-family: 'Open Sans', sans-serif;
   color: #1B1464;
   font-weight: 600;
   padding: 15px 0;
 }
 h2{
-  font-family: 'Open Sans', sans-serif;
   color: #1B1464;
+  font-weight: 600;
 }
 .box{
   margin-top: 30px;
@@ -91,7 +91,8 @@ h2{
 }
 .box h3{
   color: #1B1464;
-  padding-top: 20px;
+  padding: 30px 0px 15px;
+  font-size: 30px;
 }
 /* RANGER */
 input[type=range] {
@@ -232,8 +233,88 @@ input[type=range]:focus::-ms-fill-upper {
   text-decoration: none;
   text-transform: uppercase;
 }
-section .title{
-  font-family: 'Open Sans', sans-serif;
+.pocos-pasos{
+  padding-top: 30px;
+  background-image: url(img/background-req.png);
+}
+.title{
   color: #3C3C3B;
   text-align: center;
+}
+.margin-top{
+  margin-top: 30px;
+}
+.paragraph{
+  margin-top: 50px;
+}
+.subtitle{
+  color: #3C3C3B;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px 0;
+  margin: 50px 0;
+}
+.definition{
+  color: #3C3C3B;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 10px 0;
+}
+.violet{
+  margin-top: 50px;
+  background-color: #464081;
+  display: flex;
+  align-items: center;
+}
+.tilde{
+  float: left;
+}
+.violet-typo{
+  border-color: #464081;
+  color: #fff;
+  font-size: 14px;
+  padding-top: 5px;
+}
+.violet-typo::after{
+
+}
+.requirements{
+  background-image: url("../img/background-req.png");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+}
+.subtitle-req{
+  color: #3C3C3B;
+  font-weight: 600;
+  font-size: 20px;
+  padding-bottom: 200px;
+  padding: 30px 0;
+  margin: 40px 0;
+  text-align: center;
+}
+.center{
+  text-align: center;
+  margin: 40px 0;
+}
+.medium{
+  font-size: 200px;
+  color: #464081;
+}
+.subtitle-b{
+  color: #464081;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 30px 0 10px;
+
+}
+.ventajas{
+  margin-top: 50px;
+}
+.definition-b{
+  color: #3C3C3B;
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 0;
 }
