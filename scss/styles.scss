@@ -1,5 +1,5 @@
 $typo-primary: 'Open Sans', sans-serif;
-$primary-color: #1B1464;
+$primary-color:  #1B1464;
 $secundary-color: #666;
 
 *{
@@ -12,7 +12,7 @@ body{
 header{
   position: relative;
   text-align: center;
-  background-image: url(../img/background.jpg);
+  background-image: url(/img/background.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

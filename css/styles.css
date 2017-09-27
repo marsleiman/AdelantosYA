@@ -8,7 +8,7 @@ body {
 header {
   position: relative;
   text-align: center;
-  background-image: url(../img/background.jpg);
+  background-image: url(/img/background.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -64,11 +64,11 @@ header {
   .logo {
     width: 80%;
     padding: 0; }
-
   header nav .menu-b {
     font-size: 10px;
     margin: 0 auto;
     text-align: center; } }
+
 h1 {
   font-weight: 600;
   padding: 15px 0; }
@@ -403,5 +403,3 @@ footer {
     color: #fff;
     font-size: 24px;
     text-align: center; }
-
-/*# sourceMappingURL=styles.css.map */
