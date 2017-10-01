@@ -1,4 +1,7 @@
-/*
+$typo-primary: 'Open Sans', sans-serif;
+$primary-color:  #1B1464;
+$secundary-color: #666;
+
 body, html {
     color: #263238;
     margin: 0;
@@ -7,12 +10,12 @@ body, html {
 }
 
 .header {
-    background-color: #fbcbcd;
+    background-color: #fff;
 }
 
 
 .app-menu-line {
-    background-color: #fff;
+    background-color: $primary-color;
     border-radius: 2px;
     height: 2px;
     transition: all 500ms ease;
@@ -51,8 +54,10 @@ body, html {
 
 
 .top {
-    background-image: url("https://s-media-cache-ak0.pinimg.com/564x/90/d8/cb/90d8cb29ade0f3e492ddb8cc5c46334b.jpg");
+    background-image: url("../img/adelantos.png");
     background-repeat: repeat;
+    width: 280px;
+    height: 50px;
 }
 
 .top .top-overlay {
