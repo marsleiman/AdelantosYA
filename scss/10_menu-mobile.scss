@@ -1,0 +1,201 @@
+//colors
+$color_outer_space_approx: #263238;
+$color_pink_approx: #fbcbcd;
+$white: #fff;
+$white_60: rgba(255, 255, 255, 0.6);
+$color_your_pink_approx: #fac1c3;
+$black_50: rgba(0, 0, 0, 0.5);
+$black_40: rgba(0,0,0,0.4);
+
+//fonts
+$font_0: sans-serif;
+//@extend-elements
+//original selectors
+//body, html
+%extend_1 {
+	color: $color_outer_space_approx;
+	margin: 0;
+	padding: 0;
+	font-family: $font_0;
+}
+
+
+body {
+	@extend %extend_1;
+}
+html {
+	@extend %extend_1;
+}
+.header {
+	.app-menu-burger {
+		padding: 5px 10px 0;
+	}
+}
+.app-menu-line {
+	background-color: $white;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 2px;
+	height: 2px;
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: all 500ms ease;
+	width: 20px;
+	&:not(:first-child) {
+		margin-top: 4px;
+	}
+}
+.header-top {
+	color: $white;
+	display: flex;
+	flex-direction: row;
+	height: 44px;
+	padding: 10px;
+	flex-wrap: nowrap;
+}
+.top {
+	.top-overlay {
+		background: $white transparent;
+		background: $white_60;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+		padding: 51px;
+	}
+	img {
+		left: 50%;
+		position: relative;
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateX(-50%);
+		border: 4px solid $color_your_pink_approx;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 50%;
+	}
+}
+.bottom {
+	overflow-y: auto;
+	.list-item {
+		margin: 10px 0;
+		padding: 15px 10px;
+    font-size: 16px;
+    text-align: left;
+		//Instead of the line below you could use @include user-select($select)
+		user-select: none;
+	}
+}
+.menu {
+	position: fixed;
+	left: 0;
+	top: 44px;
+	width: 0;
+	height: 0;
+	z-index: 150;
+}
+.app-menu-container {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 100%;
+	//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+	transform: translateX(-98vw);
+	z-index: 170;
+}
+.app-menu {
+	background-color: $white;
+	color: $color_outer_space_approx;
+	position: fixed;
+	max-width: 350px;
+	width: 90%;
+	height: 100%;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 2px 6px $black_50;
+	display: flex;
+	flex-direction: column;
+	will-change: transform;
+	z-index: 160;
+	pointer-events: auto;
+}
+.menu--visible {
+	.app-menu-container {
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: none;
+		pointer-events: none;
+	}
+	.menu-background {
+		opacity: 0.5;
+		pointer-events: auto;
+	}
+	&.menu--animatable .app-menu-container {
+		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: all 330ms ease-out;
+	}
+}
+.menu-background {
+	content: '';
+	display: block;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background: $black_40;
+	opacity: 0;
+	will-change: opacity;
+	display: none;
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: opacity 0.3s cubic-bezier(0,0,0.3,1);
+}
+.menu--background-visible {
+	.menu-background {
+		display: block;
+	}
+	.app-menu-background {
+		display: block;
+	}
+}
+.no-transition {
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: none !important;
+}
+.app-menu-background {
+	background-color: $black_40;
+	display: none;
+	height: 100%;
+	opacity: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.center-content {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.center-content-container {
+	width: 100%;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+h1 {
+	font-size: 28px;
+	font-weight: initial;
+	letter-spacing: -0.45px;
+	margin: 0;
+}
+h3 {
+	font-size: 18px;
+	font-weight: initial;
+	letter-spacing: 0.8px;
+	margin: 0;
+}
+.menu--animatable .app-menu-container {
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: all 130ms ease-in;
+}
+.app-menu-open .app-menu {
+	//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+	transform: none;
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: all 300ms ease-out;
+}
