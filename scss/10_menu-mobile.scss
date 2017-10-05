@@ -79,6 +79,17 @@ html {
 		user-select: none;
 	}
 }
+.btn {
+      background: #595ec2;
+      background-image: linear-gradient(to bottom, #595ec2, $primary-color);
+      border-radius: 10px;
+      color: #fff;
+      font-family: arial;
+      font-size: 14px;
+      padding: 5px 25px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
 .menu {
 	position: fixed;
 	left: 0;
