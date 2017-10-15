@@ -90,10 +90,18 @@ h2 {
   font-weight: 600;
 }
 
+.user{
+  display: inline-block;
+  background-image: $user;
+  background-repeat: nono-repeat;
+  height: 12px;
+  margin-right: 5px;
+  width: 12px;
+}
+
 .box {
   background-color: $white;
   border-radius: 20px;
-  box-shadow: 0 0px 24px 0px rgba(0, 0, 0, 0.3);
   height: 100%;
   margin-bottom: 30px;
   margin-top: 50px;
@@ -142,6 +150,13 @@ output{
 .underscore {
     border-bottom: 1px solid #eee;
 }
+
+.bbottom{
+  border-bottom: 3px solid $secundary-color;
+  margin: 50px auto;
+  width: 150px;
+}
+
 .btn-medium {
   background: #595ec2;
   background-image: linear-gradient(to bottom, #595ec2, $primary-color);
@@ -230,7 +245,7 @@ output{
   font-weight: 600;
   margin: 40px 0;
   padding: 30px 0;
-  padding-bottom: 200px;
+  padding-bottom: 50px;
   text-align: center;
 }
 
@@ -274,6 +289,7 @@ output{
 .email {
   border-radius: 10px;
   display: block;
+  border: 1px solid #eee;
   font-size: 20px;
   margin: 30px auto;
   padding: 10px 15px;
@@ -317,7 +333,7 @@ footer {
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
-  padding: 5px 30px;
+  padding: 25px;
 
   .logo {
     background-image: url('/img/footer/logo.png');
@@ -326,17 +342,11 @@ footer {
     margin-top: 20px;
     width: 80px;
   }
-  .comodo {
-    background-image: url('/img/footer/comodo-segure.png');
-    background-size: cover;
-    height: 70px;
-    margin-top: 20px;
-    width: 120px;
-  }
 
   .terminos a {
+      display: block;
       color: $white;
-      font-size: 24px;
+      font-size: 12px;
       text-align: center;
   }
 }
