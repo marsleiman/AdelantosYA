@@ -1,9 +1,7 @@
 //colors
 $color_outer_space_approx: #263238;
-$color_pink_approx: #fbcbcd;
 $white: #fff;
 $white_60: rgba(255, 255, 255, 0.6);
-$color_your_pink_approx: #fac1c3;
 $black_50: rgba(0, 0, 0, 0.5);
 $black_40: rgba(0,0,0,0.4);
 
@@ -46,10 +44,8 @@ html {
 .header-top {
 	color: $white;
 	display: flex;
-	flex-direction: row;
 	height: 44px;
-	padding: 10px;
-	flex-wrap: nowrap;
+	padding-top: 10px;
   align-items: center;
 }
 .top {
@@ -58,15 +54,6 @@ html {
 		background: $white_60;
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
 		padding: 51px;
-	}
-	img {
-		left: 50%;
-		position: relative;
-		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
-		transform: translateX(-50%);
-		border: 4px solid $color_your_pink_approx;
-		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-		border-radius: 50%;
 	}
 }
 .bottom {

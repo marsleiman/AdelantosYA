@@ -112,6 +112,7 @@ h2 {
 
   @media only screen and (max-width: 768px) {
     margin-top: 20px;
+    width: 95%;
   }
 }
 
@@ -120,6 +121,9 @@ h2 {
   display: flex;
   justify-content: space-between;
   width: 80%;
+  @media only screen and (max-width: 768px){
+    display: none;
+  }
 
   p {
     color: #666;
@@ -187,7 +191,13 @@ output{
 .pocos-pasos {
   padding-top: 30px;
 }
-
+.imagen{
+  @media only screen and (max-width: 768px){
+      opacity: 0.2;
+      z-index: -1;
+      position: absolute;
+  }
+}
 .title {
   color: #3c3c3b;
   margin-top: 30px;
@@ -302,6 +312,10 @@ output{
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 50px 0;
+}
+
+.placeholder{
+  height: 150px;
 }
 
 .testimony {
