@@ -76,14 +76,32 @@
         <div class="col-md-12">
         </div>
         <div class="box">
-          <h1>¡Solicitá dinero de manera fácil!</h1>
-          <input type="range" name="" value="" min="1" max="5">
-          <div class="number">
+          <form class="" action="index.html" method="post" oninput="pediste.value = '$'+(range.valueAsNumber * 1000)">
+
+          <h2 class="number-mobile visible-xs visible-sm" id="numberMobile">$1000</h2>
+          <h1 class="hidden-xs hidden-sm">¡Solicitá dinero de manera fácil!</h1>
+          <input type="range" name="range" value="1" min="1" max="5" id="range" onchange="prestamo(this.value)">
+          <script>
+            function prestamo(val) {
+              var pesos = val * 1000;
+
+              // ejemplo
+              var interes = 5;
+              var total = pesos * interes / 100;
+
+              // Elementos
+              var numberMobile = document.getElementById('numberMobile');
+              //var numberMobile = document.getElementsByClassName("number-mobile")[0];
+
+              numberMobile.innerHTML='$'+pesos;
+            }
+          </script>
+          <div class="number hidden-xs hidden-sm">
             <p>$1000</p><p>$2000</p><p>$3000</p><p>$4000</p><p>$5000</p>
           </div>
           <div class="ticket">
             <div  class="title-answer underscore">
-              <p>Pediste:</p><output class="return">$1000</output>
+              <p>Pediste:</p><output class="return" for="range" name="pediste">$1000</output>
             </div>
             <div class="title-answer underscore">
               <p>Interés:</p><output class="return">$1000</output>
@@ -102,6 +120,7 @@
             </div>
           </div>
           <button type="¡SOLICITAR YA!" name="button" class="btn-medium">solicitas crédito</button>
+        </form>
         </div>
       </div>
     </div>
