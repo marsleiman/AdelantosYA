@@ -12,128 +12,115 @@
   <title>AdelantosYA</title>
 </head>
 <body>
-  <header>
-    <div class="layout">
-      <div class="header">
-        <div class="header-top">
-          <div data-link="" class="app-menu-burger OSFillParent" href="#" id="b2-Menu">
-            <div data-container="" class="app-menu-line"></div>
-            <div data-container="" class="app-menu-line OSAutoMarginTop"></div>
-            <div data-container="" class="app-menu-line OSAutoMarginTop"></div>
-          </div>
-          <div class="logo">
-          </div>
-        </div>
-      </div>
-
-      <div data-container="" class="center-content">
-        <div class="center-content-header ph" id="b3-Top"></div>
-        <div class="center-content-container ph" id="b3-Center">
-          <div data-container="">
+  <section class="order">
+    <header class="container">
+      <div class="layout">
+        <div class="header">
+          <div class="header-top">
+            <div data-link="" class="app-menu-burger OSFillParent" href="#" id="b2-Menu">
+              <div data-container="" class="app-menu-line"></div>
+              <div data-container="" class="app-menu-line OSAutoMarginTop"></div>
+              <div data-container="" class="app-menu-line OSAutoMarginTop"></div>
+            </div>
+            <div class="logo">
+            </div>
           </div>
         </div>
-        <div class="center-content-bottom ph" id="b3-Bottom"></div>
-      </div>
 
-      <div class="menu">
-        <div class="menu-background" style="cursor: pointer;"></div>
-        <div class="app-menu-container">
-          <div class="app-menu">
-            <div class="top">
-              <div class="top-overlay">
+        <div data-container="" class="center-content">
+          <div class="center-content-header ph" id="b3-Top"></div>
+          <div class="center-content-container ph" id="b3-Center">
+            <div data-container="">
+            </div>
+          </div>
+          <div class="center-content-bottom ph" id="b3-Bottom"></div>
+        </div>
+
+        <div class="menu">
+          <div class="menu-background" style="cursor: pointer;"></div>
+          <div class="app-menu-container">
+            <div class="app-menu">
+              <div class="top">
+                <div class="top-overlay">
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="list-item">REQUISITOS</div>
+                <div class="list-item">VENTAJAS</div>
+                <div class="list-item">PREGUNTAS FRECUENTES</div>
+                <div class="list-item">CONTACTO</div>
+                <div class="list-item">Mi cuenta</div>
+                <button type="solicitud" name="button" class="btn">solicitar crédito</button>
               </div>
             </div>
-            <div class="bottom">
-              <div class="list-item">REQUISITOS</div>
-              <div class="list-item">VENTAJAS</div>
-              <div class="list-item">PREGUNTAS FRECUENTES</div>
-              <div class="list-item">CONTACTO</div>
-              <div class="list-item">Mi cuenta</div>
-              <button type="solicitud" name="button" class="btn">solicitar crédito</button>
-            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="container">
-      <nav>
-        <div class="logo">
-        </div>
-        <div class="menu-desktop">
-          <ul>
-            <li><a href="#" class="menu-b">REQUISITOS</a> |</li>
-            <li><a href="#" class="menu-b">VENTAJAS</a> | </li>
-            <li><a href="#" class="menu-b">PREGUNTAS FRECUENTES</a> | </li>
-            <li><a href="#" class="menu-b">CONTACTO</a> </li>
-          </ul>
-        </div>
-        <div class="solicitud">
-          <a href="#"><div class="user"></div>Mi cuenta</a>
-        </div>
-      </nav>
-      <div class="row">
-        <div class="col-md-12">
-        </div>
-        <div class="box">
-          <form class="" action="index.html" method="post" oninput="pediste.value = '$'+(range.valueAsNumber * 1000)">
-
-          <h2 class="number-mobile visible-xs visible-sm" id="numberMobile">$1000</h2>
-          <h1 class="hidden-xs hidden-sm">¡Solicitá dinero de manera fácil!</h1>
-          <input type="range" name="range" value="1" min="1" max="5" id="range" onchange="prestamo(this.value)">
-          <script>
-            function prestamo(val) {
-              var pesos = val * 1000;
-
-              // ejemplo
-              var interes = 5;
-              var total = pesos * interes / 100;
-
-              // Elementos
-              var numberMobile = document.getElementById('numberMobile');
-              //var numberMobile = document.getElementsByClassName("number-mobile")[0];
-
-              numberMobile.innerHTML='$'+pesos;
-            }
-          </script>
-          <div class="number hidden-xs hidden-sm">
-            <p>$1000</p><p>$2000</p><p>$3000</p><p>$4000</p><p>$5000</p>
+      <div class="container">
+        <nav>
+          <div class="logo">
           </div>
-          <div class="ticket">
-            <div  class="title-answer underscore">
-              <p>Pediste:</p><output class="return" for="range" name="pediste">$1000</output>
-            </div>
-            <div class="title-answer underscore">
-              <p>Interés:</p><output class="return">$1000</output>
-            </div>
-            <div class="title-answer underscore">
-              <p>Servicio:</p><output class="return">$1000</output>
-            </div>
-            <div class="title-answer underscore underscore">
-              <p>IVA:</p><output class="return">$1000</output>
-            </div>
-            <div class="title-answer underscore">
-              <p>Devolvés:</p><output class="return">$1000</output>
-            </div>
-            <div class="title-answer underscore underscore">
-              <p>Fecha de devolución:</p><output class="return">$1000</output>
-            </div>
+          <div class="menu-desktop">
+            <ul>
+              <li><a href="#" class="menu-b">REQUISITOS</a> |</li>
+              <li><a href="#" class="menu-b">VENTAJAS</a> | </li>
+              <li><a href="#" class="menu-b">PREGUNTAS FRECUENTES</a> | </li>
+              <li><a href="#" class="menu-b">CONTACTO</a> </li>
+            </ul>
           </div>
-          <button type="¡SOLICITAR YA!" name="button" class="btn-medium">solicitas crédito</button>
-        </form>
+          <div class="solicitud">
+            <a href="#"><div class="user"></div>Mi cuenta</a>
+          </div>
+        </nav>
+      </header>
+      <div class="container">
+        <div class="row">
+          <div class="box">
+            <form class="" action="index.html" method="post" oninput="pediste.value = '$'+(range.valueAsNumber * 1000)">
+
+              <h2 class="number-mobile visible-xs visible-sm" id="numberMobile">$1000</h2>
+              <h1 class="hidden-xs hidden-sm">¡Solicitá dinero de manera fácil!</h1>
+              <input type="range" name="range" value="1" min="1" max="5" id="range" onchange="prestamo(this.value)">
+              <div class="number hidden-xs hidden-sm">
+                <p>$1000</p><p>$2000</p><p>$3000</p><p>$4000</p><p>$5000</p>
+              </div>
+              <div class="ticket">
+                <div  class="title-answer underscore">
+                  <p>Pediste:</p><output class="return" for="range" name="pediste">$1000</output>
+                </div>
+                <div class="title-answer underscore">
+                  <p>Interés:</p><output class="return">$1000</output>
+                </div>
+                <div class="title-answer underscore">
+                  <p>Servicio:</p><output class="return">$1000</output>
+                </div>
+                <div class="title-answer underscore underscore">
+                  <p>IVA:</p><output class="return">$1000</output>
+                </div>
+                <div class="title-answer underscore">
+                  <p>Devolvés:</p><output class="return">$1000</output>
+                </div>
+                <div class="title-answer underscore underscore">
+                  <p>Fecha de devolución:</p><output class="return">$1000</output>
+                </div>
+              </div>
+              <button type="¡SOLICITAR YA!" name="button" class="btn-medium">solicitas crédito</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</header>
+</section>
 <section class="pocos-pasos">
   <div class="container">
     <div class="row">
       <div class="col-md-12 title">
-          <h2 class="title">Obtené tu crédito personal</h2>
-          <h2 class="title">en pocos pasos</h2>
-          <div class="bbottom">
-          </div>
+        <h2 class="title">Obtené tu crédito personal</h2>
+        <h2 class="title">en pocos pasos</h2>
+        <div class="bbottom">
+        </div>
       </div>
       <div class="row title">
         <div class="col-md-6">
@@ -190,7 +177,7 @@
     </div>
   </div>
 </section>
-<section class="ventajas">
+<section class="ventajas"><a name="ventajas"></a>
   <div class="container">
     <h2 class="title">Ventajas</h2>
     <div class="bbottom"></div>
@@ -282,5 +269,6 @@
     </div>
   </footer>
   <script src="js/function.js" charset="utf-8"></script>
+  <script src="js/functions.js" charset="utf-8"></script>
 </body>
 </html>
