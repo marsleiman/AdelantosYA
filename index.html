@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="/css/app.css">
   <title>AdelantosYA</title>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
   <section class="order">
     <header class="container">
       <div class="layout">
@@ -45,11 +45,11 @@
                 </div>
               </div>
               <div class="bottom">
-                <div class="list-item">REQUISITOS</div>
-                <div class="list-item">VENTAJAS</div>
-                <div class="list-item">PREGUNTAS FRECUENTES</div>
-                <div class="list-item">CONTACTO</div>
-                <div class="list-item">Mi cuenta</div>
+                <div class="list-item"><a href="#requirements" title="Requisitos"></a>REQUISITOS</div>
+                <div class="list-item"><a href="#ventajas" title="Ventajas"></a>VENTAJAS</div>
+                <div class="list-item"><a href="#preguntas-frecuentes" title="PreguntasFrecuentes"></a>PREGUNTAS FRECUENTES</div>
+                <div class="list-item"><a href="#contact" title="Contacto"></a>CONTACTO</div>
+                <div class="list-item"><a href="#mi-cuenta" title="Mi cuetna"></a>Mi cuenta</div>
                 <button type="solicitud" name="button" class="btn">solicitar crédito</button>
               </div>
             </div>
@@ -57,16 +57,16 @@
         </div>
       </div>
 
-      <div class="container">
-        <nav>
+      <div class="container-fluid">
+        <nav id="header" class="navbar navbar-fixed-top">
           <div class="logo">
           </div>
           <div class="menu-desktop">
             <ul>
-              <li><a href="#" class="menu-b">REQUISITOS</a> |</li>
-              <li><a href="#" class="menu-b">VENTAJAS</a> | </li>
-              <li><a href="#" class="menu-b">PREGUNTAS FRECUENTES</a> | </li>
-              <li><a href="#" class="menu-b">CONTACTO</a> </li>
+              <li><a href="#requirements" title="requirements"class="menu-b">REQUISITOS</a></li>
+              <li><a href="#ventajas" title="Ventajas" class="menu-b">VENTAJAS</a></li>
+              <li><a href="#" class="menu-b">PREGUNTAS FRECUENTES</a></li>
+              <li><a href="#contact" title="Contacto" class="menu-b">CONTACTO</a></li>
             </ul>
           </div>
           <div class="solicitud">
@@ -74,7 +74,7 @@
           </div>
         </nav>
       </header>
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="box">
             <form class="" action="index.html" method="post" oninput="pediste.value = '$'+(range.valueAsNumber * 1000)">
@@ -124,7 +124,7 @@
       </div>
       <div class="row title">
         <div class="col-md-6">
-          <div class="imagen"><img src="img/pocos-pasos.png" alt="background-image"></div>
+          <div class="img"><img src="img/pocos-pasos.png" alt="background-image"></div>
         </div>
         <div class="col-md-6">
           <div class="paragraph">
@@ -140,6 +140,8 @@
             <p class="definition">Transferimos tu credito en menos de 1 hora habil.</p>
           </div>
           <div class="violet">
+            <div class="triangle">
+            </div>
             <div class="tilde">
               <img src="img/tilde.png" alt="v" class="tilde">
             </div>
@@ -155,7 +157,7 @@
   </div>
 </section>
 <section class="requirements">
-  <div class="container">
+  <div class="container"><a name="requirements"></a>
     <h2 class="title">Requisitos</h2>
     <div class="bbottom"></div>
     <div class="row">
@@ -223,7 +225,7 @@
   </div>
 </section>
 <section class="contact">
-  <div class="container">
+  <div class="container"><a name="contact"></a>
     <h2 class="title">¿Todavía tenés dudas?</h2>
     <h2 class="title">Contactanos</h2>
     <div class="bbottom"></div>
@@ -270,5 +272,6 @@
   </footer>
   <script src="js/function.js" charset="utf-8"></script>
   <script src="js/functions.js" charset="utf-8"></script>
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 </body>
 </html>
