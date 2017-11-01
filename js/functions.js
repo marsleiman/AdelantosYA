@@ -19,7 +19,8 @@ var myNavBar = {
     add : function() {
         if(this.flagAdd) {
             for(var i=0; i < this.elements.length; i++) {
-                document.getElementById(this.elements[i]).className += " fixed-theme";
+              $("#"+this.elements[i]).addClass("fixed-theme");
+              //document.getElementById(this.elements[i]).className += " fixed-theme";
             }
             this.flagAdd = false;
         }
@@ -27,8 +28,9 @@ var myNavBar = {
 
     remove: function() {
         for(var i=0; i < this.elements.length; i++) {
-            document.getElementById(this.elements[i]).className =
-                    document.getElementById(this.elements[i]).className.replace( /(?:^|\s)fixed-theme(?!\S)/g , '' );
+            $("#"+this.elements[i]).removeClass("fixed-theme");
+            //document.getElementById(this.elements[i]).className =
+            //document.getElementById(this.elements[i]).className.replace( /(?:^|\s)fixed-theme(?!\S)/g , '' );
         }
         this.flagAdd = true;
     }
@@ -76,44 +78,3 @@ window.onscroll = function(e) {
  */
 offSetManager();
 });
-
-
-// PRESTAMOS //
-  function prestamo(val) {
-    var pesos = val * 1000;
-
-    // ejemplo
-    var interes = 5;
-    var total = pesos * interes / 100;
-
-    // Elementos
-    var numberMobile = document.getElementById('numberMobile');
-    //var numberMobile = document.getElementsByClassName("number-mobile")[0];
-
-    numberMobile.innerHTML='$'+pesos;
-  }
-
-  //Comportamiento click
-
-  (function () {
-
-  	$('.tab').click(function () {
-
-  		if ( !$(this).hasClass('active') ) {
-
-  			$(this).siblings().removeClass('active');
-
-  			$(this).addClass('active')
-
-  			var id = this.id;
-  			var numero = id.split("-")[1];
-
-  			$('.content').hide();
-  			$('#content-' + numero).show()
-  		}
-
-  	});
-
-  	$('#tab-0').click();
-
-  })()
