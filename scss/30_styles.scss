@@ -9,12 +9,11 @@ body {
   font: 100% $typo-primary;
   overflow-x: hidden; /* Prevent scroll on narrow devices */
   padding-top: 100px;
-  background: url(/img/background.jpg) no-repeat fixed;
+  background: $background no-repeat fixed;
   background-size: cover;
-}
-
-.container {
-  max-width: 1024px;
+  @media only screen and (max-width: 768px) {
+  padding-top: 5px;
+  }
 }
 
 header {
@@ -31,6 +30,8 @@ header {
     background-repeat: no-repeat;
     height: 40px;
     width: 40px;
+    position: absolute;
+    right: 25px;
   }
   nav {
     @media only screen and (max-width: 768px) {
@@ -49,6 +50,7 @@ header {
       width: 280px;
       position: relative;
       top: 10px;
+      left: 10px;
     }
 
     ul {
